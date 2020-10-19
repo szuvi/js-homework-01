@@ -102,17 +102,15 @@ function calcOddEven(arr) {
 
 // Test cases
 
-console.log(`Exc 1 - leap years: ${returnLeapYears([1974, 1900, 1985, 2000])}`);
-console.log(`Exc 2 - factorial of 7: ${calcFactorial(7)}`);
+console.log(`1) leap years: ${returnLeapYears([1974, 1900, 1985, 2000])}`);
+console.log(`2) factorial of 7: ${calcFactorial(7)}`);
+console.log(`3) sum of odd items is: ${calcSumOfOdd([1, 6, 23, 8, 4, 98, 3, 7, 3, 98, 4, 98])}`);
+let ex4result = calcHighLow([1, 6, 23, 8, 4, 98, 3, 7, 3, 98, 4, 98]);
 console.log(
-  `Exc 3 - sum of odd items is: ${calcSumOfOdd([1, 6, 23, 8, 4, 98, 3, 7, 3, 98, 4, 98])}`
-);
-let exc4result = calcHighLow([1, 6, 23, 8, 4, 98, 3, 7, 3, 98, 4, 98]);
-console.log(
-  `Exc 4 - the lowest number is ${exc4result.lowest}, the highest number is ${exc4result.highest}`
+  `4) the lowest number is ${ex4result.lowest}, the highest number is ${ex4result.highest}`
 );
 console.log(
-  `Exc 5 - longest string is: "${returnLongestStr([
+  `5) longest string is: "${returnLongestStr([
     "Karol",
     "Adam",
     "Rogowski",
@@ -122,7 +120,7 @@ console.log(
   ])}"`
 );
 console.log(
-  `Exc 6 - indexes of highest numbers are: ${returnInexesOfHighest([
+  `6) indexes of highest numbers are: ${returnInexesOfHighest([
     1,
     6,
     23,
@@ -138,10 +136,10 @@ console.log(
   ])}`
 );
 console.log(
-  `Exc 7 - average of even numbers is: ${calcAvgOfEven([1, 6, 23, 8, 4, 98, 3, 7, 3, 98, 4, 98])}`
+  `7) average of even numbers is: ${calcAvgOfEven([1, 6, 23, 8, 4, 98, 3, 7, 3, 98, 4, 98])}`
 );
 console.log(
-  `Exc 8 - average of numbers at even indexes: ${calcAvgOfEvenIdx([
+  `8) average of numbers at even indexes: ${calcAvgOfEvenIdx([
     1,
     6,
     23,
@@ -157,5 +155,5 @@ console.log(
   ])}`
 );
 console.log(
-  `Exc 9 - result of calculation is: ${calcOddEven([1, 6, 23, 8, 4, 98, 3, 7, 3, 98, 4, 98])}`
+  `9) result of calculation is: ${calcOddEven([1, 6, 23, 8, 4, 98, 3, 7, 3, 98, 4, 98])}`
 );
