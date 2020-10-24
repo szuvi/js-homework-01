@@ -35,10 +35,10 @@ function calcSumOfOdd(arr) {
 
 function calcHighLow(arr) {
   let returnObj = arr.reduce((acc, item) => {
-    if (typeof acc.highest !== "number" || item > acc.highest) {
+    if (acc.highest == undefined || item > acc.highest) {
       acc.highest = item;
     }
-    if (typeof acc.lowest !== "number" || item < acc.lowest) {
+    if (acc.lowest == undefined || item < acc.lowest) {
       acc.lowest = item;
     }
     return acc;
@@ -59,7 +59,7 @@ function returnLongestStr(arr) {
 
 function returnInexesOfHighest(arr) {
   let retObj = arr.reduce((acc, item, index) => {
-    if (typeof acc.highest !== "number" || item > acc.highest) {
+    if (acc.highest == undefined || item > acc.highest) {
       acc.indexes = [index];
       acc.highest = item;
     } else if (item === acc.highest) {
