@@ -44,10 +44,10 @@ let highest;
 
 for (let i = 0; i < testArray3.length; i++) {
   const currNum = testArray3[i];
-  if (!lowest || currNum < lowest) {
+  if (typeof lowest !== "number" || currNum < lowest) {
     lowest = currNum;
   }
-  if (!highest || currNum > highest) {
+  if (typeof highest !== "number" || currNum > highest) {
     highest = currNum;
   }
 }
@@ -60,7 +60,7 @@ let longest;
 
 for (let i = 0; i < testArray4.length; i++) {
   const currString = testArray4[i];
-  if (!longest || currString.length > longest.length) {
+  if (typeof longest !== "number" || currString.length > longest.length) {
     longest = currString;
   }
 }
@@ -74,7 +74,7 @@ let highest2;
 
 for (let i = 0; i < testArray5.length; i++) {
   const currNum = testArray5[i];
-  if (!highest2 || currNum > highest2) {
+  if (typeof highest2 !== "number" || currNum > highest2) {
     highestIndexArr = [i]; // resets highest indexes array and adds current index to it
     highest2 = currNum;
   } else if (highest2 === currNum) {
